@@ -144,6 +144,7 @@
     return [self numberOfNodeOnLevel:level -1 inTree:rootNode.LeftNode] + [self numberOfNodeOnLevel:level -1 inTree:rootNode.RightNode];
 }
 
+///单例
 +(instancetype)shareInstance{
     static BinaryTreeNode * treeNode;
     static dispatch_once_t onceToken;
